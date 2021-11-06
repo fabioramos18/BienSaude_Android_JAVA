@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F1F1"
+    tools:context=".ui.home.HomeFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:orientation="horizontal">
+
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <RelativeLayout
+                   android:id="@+id/view_all_massage_card"
+                   android:layout_width="140dp"
+                   android:layout_height="90dp"
+                   android:background="@color/card1"
+                   android:layout_margin="20dp"
+                   android:elevation="8dp">
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical"
+                       android:paddingTop="7dp">
+
+                       <ImageView
+                           android:id="@+id/card_m"
+                           android:layout_width="60dp"
+                           android:layout_height="50dp"
+                           android:layout_gravity="center"
+                           android:src="@drawable/ic_spa"
+                           app:tint="@color/white" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="@string/Massagens"
+                           android:layout_gravity="center"
+                           android:textColor="@color/white"
+                           android:fontFamily="@font/poppinssemibold"
+                           android:textSize="18sp"/>
+
+                   </LinearLayout>
+
+
+               </RelativeLayout>
+
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <RelativeLayout
+                   android:id="@+id/view_all_rehabilitation_card"
+                   android:layout_width="140dp"
+                   android:layout_height="90dp"
+                   android:background="@color/card1"
+                   android:layout_margin="20dp"
+                   android:elevation="8dp">
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical"
+                       android:paddingTop="7dp">
+
+                       <ImageView
+                           android:id="@+id/card_r"
+                           android:layout_width="60dp"
+                           android:layout_height="50dp"
+                           android:layout_gravity="center"
+                           android:src="@drawable/ic_fitness"
+                           app:tint="@color/white" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="@string/Rehabilitation2"
+                           android:layout_gravity="center"
+                           android:textColor="@color/white"
+                           android:fontFamily="@font/poppinssemibold"
+                           android:textSize="18sp"/>
+
+                   </LinearLayout>
+
+
+               </RelativeLayout>
+
+
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="20dp"
+           android:weightSum="2">
+
+           <TextView
+               android:layout_width="504dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:fontFamily="@font/poppinssemibold"
+               android:text="Nossas Massagens"
+               android:textSize="18sp" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/view_all_massage"
+               android:fontFamily="@font/poppinssemibold"
+               android:layout_weight="1"
+               android:text="Ver Todas"
+               android:layout_gravity="end"
+               android:gravity="end"
+               android:layout_marginRight="7dp"
+               android:textSize="16sp"
+               android:textColor="@color/colorAccent"/>
+
+       </LinearLayout>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+           android:id="@+id/massage_rec"/>
+
+
+       <LinearLayout
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="20dp"
+           android:weightSum="2">
+
+           <TextView
+               android:layout_width="504dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:fontFamily="@font/poppinssemibold"
+               android:text="Nossas Reabilitações"
+               android:textSize="18sp" />
+
+           <TextView
+               android:id="@+id/view_all_rehabilitation"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="end"
+               android:layout_marginRight="7dp"
+               android:layout_weight="1"
+               android:fontFamily="@font/poppinssemibold"
+               android:gravity="end"
+               android:text="Ver Todas"
+               android:textColor="@color/colorAccent"
+               android:textSize="16sp" />
+
+       </LinearLayout>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+           android:id="@+id/rehabilitation_rec"
+           android:layout_marginBottom="15dp"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="15dp"
+           android:background="@color/white"
+           android:orientation="vertical"
+           android:paddingHorizontal="10dp"
+           android:paddingVertical="20dp">
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_credit_card_off"
+                   android:layout_marginRight="5dp"
+                   app:tint="@color/colorAccent" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="5dp"
+                   android:fontFamily="@font/poppinssemibold"
+                   android:text="Não necessita de cartão de crédito para reservar"
+                   android:textColor="@color/darkLightTextColor"
+                   android:textSize="18sp" />
+
+           </LinearLayout>
+
+
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+</ScrollView>

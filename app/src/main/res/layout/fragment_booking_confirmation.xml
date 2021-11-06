@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F3F1F1"
+    tools:context=".ui.bookingConfirmation.BookingConfirmationFragment">
+
+
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/view_all_massage_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_margin="20dp"
+                    android:elevation="8dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="A sua reserva:"
+                            android:layout_gravity="center"
+                            android:textColor="@color/darkTextColor"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Centro:"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:textSize="18sp"
+                                android:textColor="@color/darkLightTextColor"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:id="@+id/tv_center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="centro"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp"
+                                android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Serviço:"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:textSize="18sp"
+                                android:textColor="@color/darkLightTextColor"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:id="@+id/tv_service"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="serviços"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp"
+                                android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:textColor="@color/darkTextColor"
+                            android:text= "Disponibilidade:"
+                            android:layout_marginStart="15dp"
+                            android:textSize="20sp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Marcar apartir de:"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:textSize="18sp"
+                                android:textColor="@color/darkLightTextColor"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:id="@+id/tv_bookingFrom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="data"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp"
+                                android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dias da semana:"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:textSize="18sp"
+                                android:textColor="@color/darkLightTextColor"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:id="@+id/tv_preferredDays"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="dias"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp"
+                                android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Períodos do dia:"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:textSize="18sp"
+                                android:textColor="@color/darkLightTextColor"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:id="@+id/tv_periods"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="períodos"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp"
+                                android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:textColor="@color/darkTextColor"
+                            android:text= "Dados pessoais:"
+                            android:layout_marginStart="15dp"
+                            android:textSize="20sp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nome:"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:textSize="18sp"
+                                android:textColor="@color/darkLightTextColor"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:id="@+id/tv_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="nome"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp"
+                                android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Apelido / Sobrenome:"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:textSize="18sp"
+                                android:textColor="@color/darkLightTextColor"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:id="@+id/tv_surname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="apelidos"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp"
+                                android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Email:"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:textSize="18sp"
+                                android:textColor="@color/darkLightTextColor"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:id="@+id/tv_email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="email"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp"
+                                android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Data de nascimento"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:textSize="18sp"
+                                android:textColor="@color/darkLightTextColor"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:id="@+id/tv_birth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="data"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp"
+                                android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Telemóvel:"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:textSize="18sp"
+                                android:textColor="@color/darkLightTextColor"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:id="@+id/tv_mobile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="telemóvel"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp"
+                                android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:textColor="@color/darkTextColor"
+                            android:text= "Quadro clinico:"
+                            android:layout_marginStart="15dp"
+                            android:textSize="20sp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dores:"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:textSize="18sp"
+                                android:textColor="@color/darkLightTextColor"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:id="@+id/tv_dor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="dores"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp"
+                                android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cansaço muscular:"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:textSize="18sp"
+                                android:textColor="@color/darkLightTextColor"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:id="@+id/tv_musc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="cansaço muscular"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp"
+                                android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Alergias:"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:textSize="18sp"
+                                android:textColor="@color/darkLightTextColor"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:id="@+id/tv_alergias"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="alergias"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp"
+                                android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ansiedade"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:textSize="18sp"
+                                android:textColor="@color/darkLightTextColor"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:id="@+id/tv_ansiedade"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ansiedade"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp"
+                                android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Patologias agudas:"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:textSize="18sp"
+                                android:textColor="@color/darkLightTextColor"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:id="@+id/tv_patologias"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="patologias"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp"
+                                android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Febre:"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:textSize="18sp"
+                                android:textColor="@color/darkLightTextColor"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:id="@+id/tv_febre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="febre"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp"
+                                android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="20dp">
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:icon="@drawable/ic_arrow_back"
+                        android:text="Voltar"/>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/next1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:icon="@drawable/ic_arrow_forward"
+                        app:iconGravity="end"
+
+                        android:text="confirmar" />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

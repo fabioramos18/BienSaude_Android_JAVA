@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/register_bk_color"
+    android:focusableInTouchMode="true"
+    tools:context=".RegisterActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                style="@style/viewParent.headerText.NoMode"
+                android:text="Registe-se para disfrutar\n dos nossos serviços! "
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/whiteTextColor"
+                android:fontFamily="@font/poppinssemibold"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/whiteTextColor"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/logo"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="25dp"/>
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/btn_selected_photo"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_photo"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:riv_oval="true"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/textInputName"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:startIconDrawable="@drawable/ic_baseline_account_circle_24"
+                            android:layout_weight=".48">
+
+                            <EditText
+                                android:id="@+id/editTextName"
+                                style="@style/modifiedEditText"
+                                android:layout_width="match_parent"
+                                android:fontFamily="@font/poppinsregular"
+                                android:hint="Nome"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/textInputApelido"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:startIconDrawable="@drawable/ic_baseline_account_circle_24"
+                            android:layout_weight=".48">
+                            <EditText
+                                android:id="@+id/editTextApelido"
+                                style="@style/modifiedEditText"
+                                android:drawableStart="@drawable/ic_baseline_account_circle_24"
+                                android:fontFamily="@font/poppinsregular"
+                                android:hint="Apelido"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:textSize="16sp"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputBDate"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:startIconDrawable="@drawable/ic_baseline_today"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+
+                        <EditText
+                            android:id="@+id/editTextBDate"
+                            style="@style/modifiedEditText"
+                            android:focusable="false"
+                            android:fontFamily="@font/poppinsregular"
+                            android:hint="Data de Nascimento"
+                            android:maxLines="1"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <RadioGroup
+                        android:id="@+id/radioG"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        >
+                        <RadioButton
+                            android:id="@+id/masc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/poppinsregular"
+                            android:text="Masculino"
+                            android:textSize="18sp"
+                            android:checked="true"/>
+                        <RadioButton
+                            android:id="@+id/fem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Feminino"
+                            android:fontFamily="@font/poppinsregular"
+                            android:textSize="18sp"/>
+                    </RadioGroup>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputEmail"
+                        app:startIconDrawable="@drawable/ic_baseline_email_24"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <EditText
+                            android:id="@+id/editTextEmail"
+                            style="@style/modifiedEditText"
+                            android:hint="@string/login_email_hint"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:fontFamily="@font/poppinsregular"
+                            android:textSize="16sp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputPassword"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        app:helperText="Utilize 8 ou mais carateres numa mistura de letras, números e símbolos."
+                        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                        app:endIconMode="password_toggle">
+
+                        <EditText
+                            android:id="@+id/editTextPassword"
+                            style="@style/modifiedEditText"
+                            android:hint="@string/login_password_hint"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:fontFamily="@font/poppinsregular"
+                            android:textSize="18sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputConfirmPassword"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                        app:endIconMode="password_toggle">
+
+                        <EditText
+                            android:id="@+id/editTextPasswordConfirm"
+                            style="@style/modifiedEditText"
+                            android:hint="Confirmar"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/poppinsregular"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                        android:id="@+id/cirRegisterButton"
+                        style="@style/loginButton"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:onClick="registerUser"
+                        android:text="Register"
+                        app:initialCornerAngle="27dp"
+                        app:spinning_bar_color="#FFF"
+                        app:spinning_bar_padding="6dp"
+                        app:spinning_bar_width="4dp"
+                        tools:ignore="OnClick" />
+
+                    <TextView
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:onClick="onLoginClick"
+                        android:text="Já tem uma conta?"
+                        android:textAlignment="center"
+                        android:textColor="@color/themeColor"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:textStyle="bold"
+                        tools:ignore="OnClick" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:weightSum="12">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="3"
+                    android:background="@color/whiteTextColor" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="3"
+                    android:background="@color/whiteTextColor" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_side_bg" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="30dp"
+        android:adjustViewBounds="false"
+        android:onClick="onLoginClick"
+        android:src="@drawable/ic_back_img"
+        tools:ignore="OnClick" />
+</RelativeLayout>

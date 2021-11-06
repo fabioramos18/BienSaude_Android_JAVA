@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_outline_home"
+            android:title="@string/Inicio" />
+    </group>
+
+    <item android:title="@string/Marcações">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_booking"
+                android:icon="@drawable/ic_outline_add"
+                android:title="@string/Nova_consulta" />
+
+            <item
+                android:id="@+id/nav_schedule"
+                android:icon="@drawable/ic_outline_today"
+                android:title="@string/Schedule" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/Serviços">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_massage"
+                    android:icon="@drawable/ic_spa"
+                    android:title="@string/Massagens" />
+                <item
+                    android:id="@+id/nav_rehabilitation"
+                    android:icon="@drawable/ic_fitness"
+                    android:title="@string/Rehabilitation" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/Count">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_outline_identity"
+                    android:title="@string/Profile" />
+                <item
+                    android:id="@+id/nav_leave"
+                    android:icon="@drawable/ic_logout"
+                    android:title="@string/Leave" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/Other">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_location"
+                android:icon="@drawable/ic_outline_location"
+                android:title="@string/Location" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_outline_help"
+                android:title="@string/Help" />
+            <item
+                android:id="@+id/nav_wpp"
+                android:icon="@drawable/ic_baseline_call"
+                android:title="@string/Wpp" />
+            </group>
+        </menu>
+    </item>
+
+
+
+
+
+
+
+</menu>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp"
+    android:background="#F3F1F1"
+    tools:context=".ui.clinicalPicture.ClinicalPictureFragment">
+
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/view_all_massage_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_margin="20dp"
+                    android:elevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="Preencha o seguinte formulário:"
+                            android:textColor="@color/darkTextColor"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="Dores:"
+                            android:textColor="@color/darkTextColor"
+                            android:textSize="20sp" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/radioGroupDor">
+
+                            <RadioButton
+                                android:id="@+id/radio_dor1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="Sim"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp" />
+
+                            <RadioButton
+                                android:id="@+id/radio_dor2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Não"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textSize="16sp"
+                                android:textColor="@color/darkTextColor"/>
+
+                        </RadioGroup>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/textInputDorLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_marginTop="@dimen/loginViewsMargin">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtDorLocation"
+                                style="@style/modifiedEditText"
+                                android:fontFamily="@font/poppinsregular"
+                                android:hint="Localização"
+                                android:maxLines="1" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/textInputDorDuration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="@dimen/loginViewsMargin">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtDorDuration"
+                                style="@style/modifiedEditText"
+                                android:fontFamily="@font/poppinsregular"
+                                android:hint="Duração"
+                                android:maxLines="1" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="Cansaço muscular:"
+                            android:textColor="@color/darkTextColor"
+                            android:textSize="20sp" />
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="20dp"
+                            android:id="@+id/radioGroupMusc">
+
+                            <RadioButton
+                                android:id="@+id/radio_musc1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="Sim"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp" />
+
+                            <RadioButton
+                                android:id="@+id/radio_musc2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Não"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textSize="16sp"
+                                android:textColor="@color/darkTextColor"/>
+
+                        </RadioGroup>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="Alergias:"
+                            android:textColor="@color/darkTextColor"
+                            android:textSize="20sp" />
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/radioGroupAlergias">
+
+                            <RadioButton
+                                android:id="@+id/radio_alergias1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="Sim"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp" />
+
+                            <RadioButton
+                                android:id="@+id/radio_alergias2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Não"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textSize="16sp"
+                                android:textColor="@color/darkTextColor"/>
+                        </RadioGroup>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/textInputAlergias"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_marginTop="@dimen/loginViewsMargin">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtAlergias"
+                                style="@style/modifiedEditText"
+                                android:fontFamily="@font/poppinsregular"
+                                android:hint="Quais?"
+                                android:maxLines="1" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="Ansiedade:"
+                            android:textColor="@color/darkTextColor"
+                            android:textSize="20sp" />
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="20dp"
+                            android:id="@+id/radioGroupAnsiedade">
+
+                            <RadioButton
+                                android:id="@+id/radio_ans1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="Sim"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp" />
+
+                            <RadioButton
+                                android:id="@+id/radio_ans2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Não"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textSize="16sp"
+                                android:textColor="@color/darkTextColor"/>
+
+                        </RadioGroup>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="Patologias agudas:"
+                            android:textColor="@color/darkTextColor"
+                            android:textSize="20sp" />
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/radioGroupPatologias">
+
+                            <RadioButton
+                                android:id="@+id/radio_pat1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="Sim"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp" />
+
+                            <RadioButton
+                                android:id="@+id/radio_pat2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Não"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textSize="16sp"
+                                android:textColor="@color/darkTextColor"/>
+                        </RadioGroup>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/textInputPatologias"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_marginTop="@dimen/loginViewsMargin">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtPatologias"
+                                style="@style/modifiedEditText"
+                                android:fontFamily="@font/poppinsregular"
+                                android:hint="Quais?"
+                                android:maxLines="1" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="Febre:"
+                            android:textColor="@color/darkTextColor"
+                            android:textSize="20sp" />
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="20dp"
+                            android:id="@+id/radioGroupFebre">
+
+                            <RadioButton
+                                android:id="@+id/radio_febre1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="Sim"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="16sp" />
+
+                            <RadioButton
+                                android:id="@+id/radio_febre2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Não"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textSize="16sp"
+                                android:textColor="@color/darkTextColor"/>
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="20dp">
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:icon="@drawable/ic_arrow_back"
+                        android:text="Voltar"/>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/next1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:icon="@drawable/ic_arrow_forward"
+                        app:iconGravity="end"
+                        android:text="proximo" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

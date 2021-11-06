@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">BienSaude </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="Home">Início</string>
+
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="forgot_password">Para redefinir sua senha, insira o endereço de e-mail que você usou para configurar sua conta BienSaúde. Enviaremos um link para ajudá-lo a voltar para sua conta.</string>
+    <string name="Inicio">Inicio</string>
+    <string name="Schedule">Agenda</string>
+    <string name="Nova_consulta">Marcar Consulta</string>
+    <string name="Histórico">Historico</string>
+    <string name="Massagens">Massagens</string>
+    <string name="Rehabilitation">Reabilitaçao Fisica</string>
+    <string name="Count">Conta</string>
+    <string name="Profile">Perfil</string>
+    <string name="Location">Centro Lisboa</string>
+    <string name="Help">Perguntas Frequentes</string>
+    <string name="Wpp">WhatsApp 923 667 345</string>
+    <string name="Leave">Terminar Sessão</string>
+    <string name="Marcações">Marcações</string>
+    <string name="Serviços">Serviços</string>
+    <string name="Other">Outros</string>
+    <string name="Name">Fábio Ramos</string>
+    <string name="Email">fabioramos10h@gmail.com</string>
+    <string name="Name_title">Nome</string>
+    <string name="Email_title">Email</string>
+    <string name="Telemovel_title">Telemóvel</string>
+    <string name="Endereco_title">Endereço</string>
+    <string name="Booking">Tipo de Marcação</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Rehabilitation2">Reabilitações</string>
+    <string name="Detalais">Detalhes</string>
+    <string name="Description">Descrição</string>
+</resources>

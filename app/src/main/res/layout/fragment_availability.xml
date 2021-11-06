@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp"
+    android:background="#F3F1F1"
+    tools:context=".ui.availability.AvailabilityFragment">
+
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/view_all_massage_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_margin="20dp"
+                    android:elevation="8dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="Para quando pretende marcar?"
+                            android:textColor="@color/darkTextColor"
+                            android:layout_marginBottom="20dp"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="Marcar a partir de:"
+                            android:textColor="@color/darkTextColor"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="20sp" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/textInputBDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_marginBottom="15dp"
+                            app:startIconDrawable="@drawable/ic_baseline_today"
+                            android:layout_marginTop="@dimen/loginViewsMargin">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextBDate"
+                                style="@style/modifiedEditText"
+                                android:focusable="false"
+                                android:fontFamily="@font/poppinsregular"
+                                android:hint="Escolha uma data"
+                                android:maxLines="1" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:textColor="@color/darkTextColor"
+                            android:text="Dias da semana que prefere:"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsregular"
+                            android:textColor="@color/darkTextColor"
+                            android:text="(opcional)"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="16sp" />
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtInDays"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="15dp"
+                            app:startIconDrawable="@drawable/ic_baseline_today"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:hint="Selecione os dias">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtDays"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/darkTextColor"
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:textColor="@color/darkTextColor"
+                            android:text="Períodos do dia que prefere:"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsregular"
+                            android:textColor="@color/darkTextColor"
+                            android:text="(opcional)"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="16sp" />
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                           android:id="@+id/txtInputHours"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            app:startIconDrawable="@drawable/ic_access_time"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:hint="Selecione os períodos">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtHours"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textColor="@color/darkTextColor"
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="20dp">
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:icon="@drawable/ic_arrow_back"
+                        android:text="Voltar"/>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/next1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:icon="@drawable/ic_arrow_forward"
+                        app:iconGravity="end"
+
+                        android:text="proximo" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

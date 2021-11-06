@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "93823508104",
+    "firebase_url": "https://pap-escola-b9c0f.firebaseio.com",
+    "project_id": "pap-escola-b9c0f",
+    "storage_bucket": "pap-escola-b9c0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93823508104:android:5ae87b4f7fa9d9cdfc493d",
+        "android_client_info": {
+          "package_name": "com.example.biensaudev1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93823508104-jqqbhmb6jbvnctm3m5v2ajlun9b84h38.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzCvWBxTBuX4nVEmZgyVqLWk8u0W7K-q8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93823508104-jqqbhmb6jbvnctm3m5v2ajlun9b84h38.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93823508104:android:1885a2f16cd2efc5fc493d",
+        "android_client_info": {
+          "package_name": "com.example.papbiensaude"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93823508104-jqqbhmb6jbvnctm3m5v2ajlun9b84h38.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzCvWBxTBuX4nVEmZgyVqLWk8u0W7K-q8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93823508104-jqqbhmb6jbvnctm3m5v2ajlun9b84h38.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93823508104:android:a855e8b68f5088c5fc493d",
+        "android_client_info": {
+          "package_name": "com.exemple.biensaudepap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93823508104-jqqbhmb6jbvnctm3m5v2ajlun9b84h38.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzCvWBxTBuX4nVEmZgyVqLWk8u0W7K-q8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93823508104-jqqbhmb6jbvnctm3m5v2ajlun9b84h38.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

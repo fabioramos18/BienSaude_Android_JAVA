@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#91c152</color>
+    <color name="themeColor">#91c152</color>
+    <color name="darkLightTextColor">#5c5c5c</color>
+    <color name="darkTextColor">#292929</color>
+    <color name="contentTextColor">#020000</color>
+    <color name="register_bk_color">#91c152</color>
+    <color name="login_bk_color">#fff</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#91c152</color>
+    <color name="snack_error_color">#F72400</color>
+    <color name="card1">#a6cf72</color>
+
+
+
+
+</resources>

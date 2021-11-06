@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.biensaudev1.ui.home.HomeFragment"
+        android:label="@string/Home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_massage"
+            app:destination="@id/nav_massage" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_rehabilitation"
+            app:destination="@id/nav_rehabilitation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_booking"
+        android:name="com.example.biensaudev1.ui.booking.BookingFragment"
+        android:label="@string/Booking"
+        tools:layout="@layout/fragment_booking" >
+        <action
+            android:id="@+id/action_nav_booking_to_bookingTypeFragment"
+            app:destination="@id/bookingTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_schedule"
+        android:name="com.example.biensaudev1.ui.schedule.ScheduleFragment"
+        android:label="@string/Schedule"
+        tools:layout="@layout/fragment_schedule" />
+    <fragment
+        android:id="@+id/nav_massage"
+        android:name="com.example.biensaudev1.ui.massage.MassageFragment"
+        android:label="Massagem"
+        tools:layout="@layout/fragment_massage" />
+    <fragment
+        android:id="@+id/nav_rehabilitation"
+        android:name="com.example.biensaudev1.ui.rehabilitation.RehabilitationFragment"
+        android:label="@string/Rehabilitation"
+        tools:layout="@layout/fragment_rehabilitation" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.biensaudev1.ui.profile.ProfileFragment"
+        android:label="@string/Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_nav_profile_to_reservesFragment"
+            app:destination="@id/reservesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_location"
+        android:name="com.example.biensaudev1.ui.location.LocationFragment"
+        android:label="@string/Location"
+        tools:layout="@layout/fragment_location" />
+    <fragment
+        android:id="@+id/bookingTypeFragment"
+        android:name="com.example.biensaudev1.ui.bookingType.BookingTypeFragment"
+        android:label="Tipo de serviço"
+        tools:layout="@layout/fragment_booking_type" >
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_bookingTypeFragment_to_availabilityFragment"
+            app:destination="@id/availabilityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/availabilityFragment"
+        android:name="com.example.biensaudev1.ui.availability.AvailabilityFragment"
+        android:label="Disponibilidade"
+        tools:layout="@layout/fragment_availability" >
+        <argument
+            android:name="type"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="center"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="service"
+            app:argType="string"
+            android:defaultValue="-" />
+        <action
+            android:id="@+id/action_availabilityFragment_to_bookingDatasFragment"
+            app:destination="@id/bookingDatasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clinicalPictureFragment"
+        android:name="com.example.biensaudev1.ui.clinicalPicture.ClinicalPictureFragment"
+        android:label="Quadro clinico"
+        tools:layout="@layout/fragment_clinical_picture" >
+        <argument
+            android:name="type"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="center"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="service"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="datefrom"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="dateday"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="datehours"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="surname"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument android:name="birth"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="mobile"
+            app:argType="string"
+            android:defaultValue="-" />
+        <action
+            android:id="@+id/action_clinicalPictureFragment_to_bookingConfirmationFragment"
+            app:destination="@id/bookingConfirmationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookingConfirmationFragment"
+        android:name="com.example.biensaudev1.ui.bookingConfirmation.BookingConfirmationFragment"
+        android:label="Confirmação"
+        tools:layout="@layout/fragment_booking_confirmation" >
+        <argument
+            android:name="type"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="center"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="service"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="datefrom"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="dateday"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="datehours"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="surname"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="birth"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="mobile"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="dores"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="cansaco"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="alergias"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="ansiedade"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="patologias"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="febre"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_bookingConfirmationFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookingDatasFragment"
+        android:name="com.example.biensaudev1.BookingDatasFragment"
+        android:label="Dados pessoais"
+        tools:layout="@layout/fragment_booking_datas" >
+        <argument
+            android:name="type"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="center"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="service"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="datefrom"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="dateday"
+            app:argType="string"
+            android:defaultValue="-" />
+        <argument
+            android:name="datehours"
+            app:argType="string"
+            android:defaultValue="-" />
+        <action
+            android:id="@+id/action_bookingDatasFragment_to_clinicalPictureFragment"
+            app:destination="@id/clinicalPictureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reservesFragment"
+        android:name="com.example.biensaudev1.ui.reserve.ReservesFragment"
+        android:label="As suas reservas"
+        tools:layout="@layout/fragment_reserves" />
+    <fragment
+        android:id="@+id/expectationDetailFragment"
+        android:name="com.example.biensaudev1.ui.expectation.ExpectationDetailFragment"
+        android:label="fragment_expectation_detail"
+        tools:layout="@layout/fragment_expectation_detail" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.biensaudev1.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/forgotPasswordActivity"
+        android:name="com.example.biensaudev1.ForgotPasswordActivity"
+        android:label="activity_forgot_password"
+        tools:layout="@layout/activity_forgot_password" />
+    <activity
+        android:id="@+id/registerActivity"
+        android:name="com.example.biensaudev1.RegisterActivity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_register" />
+    <activity
+        android:id="@+id/detailedActivity"
+        android:name="com.example.biensaudev1.DetailedActivity"
+        android:label="activity_detailed"
+        tools:layout="@layout/activity_detailed" />
+    <fragment
+        android:id="@+id/recipientsDetailFragment"
+        android:name="com.example.biensaudev1.ui.recipients.RecipientsDetailFragment"
+        android:label="fragment_recipients_detail"
+        tools:layout="@layout/fragment_recipients_detail" />
+
+</navigation>
